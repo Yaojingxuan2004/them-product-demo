@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ThEM · 我的双角色</title><link rel="stylesheet" href="/style.css">
+  <script src="/chat.js" defer></script><script src="/app.js" defer></script>
+</head>
+<body>
+  <!-- THESIS: Two distinct AI roles invite conversation and deliberate self-expression.
+  OWN-WORLD: Violet #3625c2, pink #fd6ea0, acid yellow #e4fc10, paper #fafbf7; bold Noto lettering and flat conversation cards.
+  STORY: Start a conversation, confirm a memory, choose its audience, preview the avatar.
+  FIRST VIEWPORT: 100px horizontal navigation; 56.5% violet left field with giant two-line headline and yellow chat action; 43.5% pink right field with three overlapping speech cards and outlined memory action.
+  FORM: Exchange cards, seventh reference, seed 9daa496c; approved composition layout-a.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance -->
+  <a class="skip" href="#main">跳到主要内容</a>
+  <div class="app-shell">
+    <header class="sidebar">
+      <a class="brand" href="#home" aria-label="ThEM 首页">ThEM</a>
+      <nav aria-label="工作区">
+        <a href="#home" data-route="home"><span class="nav-icon" aria-hidden="true">◌</span>我的双角色</a>
+        <a href="#ideal" data-route="ideal"><span class="nav-icon" aria-hidden="true">◇</span>理想好友</a>
+        <a href="#memory" data-route="memory"><span class="nav-icon" aria-hidden="true">≡</span>记忆与展示</a>
+        <a href="#preview" data-route="preview"><span class="nav-icon" aria-hidden="true">↗</span>分身预览</a>
+      </nav>
+      <span class="demo-label">本地演示 · AI角色</span>
+    </header>
+    <div class="workspace">
+      <header class="topbar"><span id="crumb">我的双角色</span><span class="profile"><span class="avatar-small">我</span>演示资料主人</span></header>
+      <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+      <div id="recovery" class="recovery" hidden><span>保存结果待核对，请暂勿重复提交。</span><button id="check-save" class="secondary">核对保存结果</button><button id="retry-save" class="secondary" hidden>继续同一保存</button></div>
+      <main id="main" tabindex="-1"></main>
+      <footer class="page-foot"><span>ThEM · 双角色培养与分身交流</span><div class="sidebar-foot"><strong>本地合成演示</strong><p>资料保存在这台电脑上。<br>正在读取演示模式。</p></div></footer>
+    </div>
+  </div>
+  <noscript>请启用JavaScript使用本地演示。</noscript>
+</body>
+</html>
